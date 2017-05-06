@@ -10,7 +10,7 @@ Eclipse AspectJ plug-in enabled
 1, download SeqParser.jar
 https://github.com/laura310/SeqParser
 
-2, test case codes are already put in src/test package.
+[2, test case codes are already put in src/test package.]
 
 3, run the JAR file to generate sequence diagram [ONE parameters needed].
 (1) in command line, go to the directory where SeqParser.jar is downloaded.
