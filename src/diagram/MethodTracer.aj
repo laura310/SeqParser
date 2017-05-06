@@ -10,21 +10,14 @@ public aspect MethodTracer {
     before(): pt(){
         String methodName = thisJoinPointStaticPart.getSignature().getName();
         System.out.println("***** thisJoinPointStaticPart: " + thisJoinPointStaticPart);
-//        System.out.println("***** methodName: " + methodName);
         
         String verboseCallee = thisJoinPoint.getTarget().getClass().getName();
         String callee = verboseCallee.substring(verboseCallee.lastIndexOf(".") + 1);
-//        System.out.println("***** callee: " + callee);
         
         Object[]  args = thisJoinPoint.getArgs();
-//        System.out.println("***** args: " + args);
-//        for(Object arg : args) {
-//        	System.out.println("********** arg: " + arg);
-//        }
         
         String verboseCaller = thisJoinPoint.getThis().getClass().getName();
         String caller = verboseCaller.substring(verboseCaller.lastIndexOf(".") + 1);
-//        System.out.println("***** caller: " + caller);
         
         String verboseReturnType = ((MethodSignature) thisJoinPoint.getSignature()).getReturnType().getName();
         int index = verboseReturnType.lastIndexOf(".");

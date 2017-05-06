@@ -18,7 +18,7 @@ public class SequenceDiagram {
 	public static void main(String[] args){
 		if(args.length != 1) {
 			System.out.println("\nPlease specify the [path]/name.png of generated diagram.");
-			System.out.println("e.g.: Users/laurazhou/Desktop/diagram.png");	
+			System.out.println("e.g.: /Users/laurazhou/Desktop/diagram.png");	
 			return;
 		}	
 		outPath = args[0];
